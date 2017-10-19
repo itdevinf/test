@@ -1,3 +1,9 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+</head>
+<body>
 Formation GIT
 https://www.youtube.com/watch?v=V6Zo68uQPqE
 https://www.youtube.com/watch?v=rP3T0Ee6pLU&list=PLjwdMgw5TTLXuY5i7RW0QqGdW0NZntqiP
@@ -43,9 +49,52 @@ Untracked files:
 
         HowToGit.html
 		
-7/ Ajouter le fichier dans le projet
+7/ Ajouter un fichier dans le projet
 git add HowToGit.html
+git status
+On branch master
 
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   HowToGit.html
+
+8/ Commiter le fichier dans le projet
+git commit --message "Creation du fichier HowToGit.html"
+git status
+
+9/ Faire des évolutions dans le fichier et regarder les évolutions
+git diff
+
+10/ Voir l'historique des commits
+git log
+
+11/ Création d'une branche
+git branch myBranch
+
+11.1/ Voir les branches
+git branch
+* master
+  myBranch
+
+  11.2/ Aller sur une granche
+git checkout myBranch
+Switched to branch 'myBranch'
+M       HowToGit.html
+
+git branch
+  master
+* myBranch
+
+11.3/ Regarder les évolutions entre deux branches
+git diff master..myBranch
+
+=================================
+Sites interressants
+https://flatuicolors.com/
+</body>
 
 
 
