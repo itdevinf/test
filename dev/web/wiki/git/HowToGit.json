@@ -1,0 +1,54 @@
+GIT INSTALLATION
+Git Video : https://www.youtube.com/watch?v=G0UV0jKgV4Y
+Git url : https://git-scm.com/
+Git downloaded : 64-bit Git for Windows Setup.
+Git installation : C:\Program Files\Git
+Git setup : Additional icons => On the Desktop
+            Git LFS (Large File Support)
+            Associate .git* configuration files with the default text editor
+            Associate .sh files to be run with Bash
+Git shortcuts : Git
+Git default editor : Vim
+Git environment : Use Git from the Windows Command Prompt
+Git HTTPS : Use the OpenSSL library
+Git End line : Checkout Windows-style,commit Unix-style
+Git terminal : ??? Use Windows' default console
+Git others : File system caching
+Git install : Go
+Git release note : file:///C:/Program%20Files/Git/ReleaseNotes.html
+Git test : git version
+           git help
+GIT CONFIGURATION
+Git Video : https://www.youtube.com/watch?v=chhVBZfRFgI
+git Projet : cd xxx/myProject
+git Init : git init
+git email : git config --global user.email "myEmail@y.z"
+git name : git config --global user.name "myName"
+git config : git config --list
+GIT LOCAL
+git status : git status
+git add : git add <files> => git add "*.html" git add --all : To stage the files (indexed the files)
+git commit : git commit -m "My commit information" => To commit the files
+git commit : git commit -a -m "My commit information" => Staging + Commit
+git ignore : touch .gitignore vi .gitignore [ *.tmp log.txt tmp/* ]
+git history : git log -n 2 => 2 last commit
+git log --oneline => Display on 1 line
+git log -p filename => Dispaly only information for this file
+git diff
+git branch => branches list * is qhere we are
+git branch branchName => branch creation
+git checkout branchName => Go to the good branch
+git branch => Verify where we are
+git checkout master => Go to master to merge
+git merge branchName => merge
+git log => to verify
+git branch -d branchName => to remove branch
+git branch => to verify
+GIT REMOTE
+GUI LIKE GITHUB / BITBUCKET / SOURCE TREE ...
+https://www.youtube.com/watch?v=hPfgekYUKgk
+git remote add origin url
+git remote
+git push origin master => Send local master to remote origine
+git pull origin master => get local master from remote origine
+git ssh key => https://www.youtube.com/watch?v=La3SaI2hjzE
