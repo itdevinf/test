@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<h1>Formation GIT & GITHUB</h1>
+<h2>Formation GIT</h2>
+<h3>Installer GIT</h3>
+<p class="ins">
+GitSetup</br>
+Select Components</br>
+-Décocher "Additional icons"</br>
+-Décocher "Windows Explorer integration"</br>
+</br>
+Adjusting your PATH environment</br>
+-Use Git and optional Unix tools from the Windows Command Prompt</br>
+</br>
+Configuring the line ending conversions</br>
+-Checkout Windows-style, commit Unix-style line endings
+</p>
+<h3>Sous window utiliser powershell</h3>
+<p>
+</p>
+<h3>Pour vérifier si GIT est présent</h3>
+<p class="cmd">
+git --version</br>
+git --help
+</p>
+<h3>Configuration la configuration est sauvée dans C:\Users\pcuserName</h3>
+<p class="cmd">
+git config --global user.name "gitusername"</br>
+git config --global user.email "gituseremail"</br>
+git config -l
+</p>
+<h3>Créer un projet</h3>
+<p class="cmd">
+cd C:\Users\pcuserName</br>
+mkdir MesProjets</br>
+cd MesProjets</br>
+mkdir gitTest</br>
+cd gitTest</br>
+git init</br>
+git status
+</p>
+<h3>Créer un fichier exemple HowToGit.html</h3>
+<p class="cmd">
+git status
+</p>
+<p class="res">
+Untracked files:</br>
+(use "git add <file>..." to include in what will be committed)</br>
+</br>
+HowToGit.html
+</p>		
+<h3>Ajouter un fichier dans le projet</h3>
+<p class="cmd">
+git add HowToGit.html</br>
+git status</br>
+</p>
+<p class="res">
+On branch master</br>
+</br>
+Initial commit</br>
+</br>
+Changes to be committed:</br>
+  (use "git rm --cached <file>..." to unstage)</br>
+</br>
+new file:   HowToGit.html
+</p>
+<h3>Commiter le fichier dans le projet</h3>
+<p class="cmd">
+git commit --message "Creation du fichier HowToGit.html"</br>
+git status
+</p>
+<h3>Faire des évolutions dans le fichier et regarder les évolutions</h3>
+<p class="cmd">
+git diff
+</p>
+<h3>Voir l'historique des commits</h3>
+<p class="cmd">
+git log
+</p>
+<h3>Création d'une branche</h3>
+<p class="cmd">
+git branch myBranch
+</p>
+<h4>Voir les branches</h4>
+<p class="cmd">
+git branch</br>
+</p>
+<p class="res">
+* master</br>
+  myBranch</br>
+</br>
+</p>
+<h4>Aller sur une branche</h4>
+<p class="cmd">
+git checkout myBranch</br>
+</p>
+<p class="res">
+Switched to branch 'myBranch'</br>
+M       HowToGit.html</br>
+</br>
+git branch</br>
+  master</br>
+* myBranch
+</p>
+<h4>Regarder les évolutions entre deux branches</h4>
+<p class="cmd">
+git add .\HowToGit.html</br>
+git commit --message "Commit de la branche"</br>
+</p>
+<p class="res">
+[myBranch ca81132] Commit de la branch</br>
+ 1 file changed, 50 insertions(+), 1 deletion(-)</br>
+</p>
+<p class="cmd">
+git diff master..myBranch</br>
+</p>
+<p class="res">
+diff --git a/HowToGit.html b/HowToGit.html</br>
+index 52d5d92..abf700b 100644</br>
+--- a/HowToGit.html</br>
++++ b/HowToGit.html</br>
+@@ -1,3 +1,9 @@</br>
+...
+</p>
+<h4>Merger la branche dans master</h4>
+<p class="cmd">
+git merge myBranch
+</p>
+<h4>Supprimer une branche</h4>
+<p class="cmd">
+git branch -d myBranch
+</p>
+<p class="inf">
+Si la branche n'est pas commitée on ne peut pas la suprimer</br>
+sauf si on met -D pour forcer</br>
+git branch -D myBranch
+</p>
+<h2>GITHUB</h2>
+<p>
+</p>
+<h3>Définition</h3>
+<p class="inf">
+Ebergement de nos projets à distance</br>
+Comment le lancer</br>
+https://github.com
+</p>
+<h3>Créer un compte</h3>
+<p class="inf">
+gitusername</br>
+gituseremail</br>
+gituserpasswd
+</p>
+<h3>Creation d'un repository public : test</h3>
+<p>
+</p>
+<h3>Creation une clée ssh</h3>
+<p>
+https://www.youtube.com/watch?v=La3SaI2hjzE
+https://github.com/gituserName
+Edit profile
+SSH and GPG keys
+https://github.com/settings/keys
+Appuyer sur le bouton : "new SSH key"
+
+
+Sous window utiliser powershell (PS prompt)
+PS C:\Users\frup44339\.ssh> ssh-keygen -t rsa -b 4096 -C "gituseremail"
+Generating public/private rsa key pair.
+Enter file in which to save the key (/c/Users/pcusername/.ssh/id_rsa):
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /c/Users/pcusername/.ssh/id_rsa.
+Your public key has been saved in /c/Users/pcusername/.ssh/id_rsa.pub.
+The key fingerprint is:
+SHA256:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx gituseremail
+The key's randomart image is:
++---[RSA 4096]----+
+|?????????????????|
+|?????????????????|
+|?????????????????|
+|?????????????????|
+|?????????????????|
+|?????????????????|
+|?????????????????|
+|?????????????????|
+|?????????????????|
++----[SHA256]-----+
+
+
+
+
+recopier la clée : C:/Users/pcusername/.ssh/id_rsa/github.pub
+Sous githut recopier la clez.
+aller dans
+Title :
+PcTrav
+
+Key :
+ssh-rsa AAAA... gituseremail
+Appuyer sur le bouton : "Add SSH key""
+</p>
+<h4>Envoyer mon code (push) sur le remote serveur "origin"</h4>
+<p class="cmd">
+Définir le serveur "origin" format :
+</p>
+<p class="ins">
+git remote add origin git@github.com:<gitusername>/<projet>.git<c></br>
+Definir origine reel :</br>
+</p>
+<p class="cmd">
+git remote add origin git@github.com:gitusername/test.git</br>
+</p>
+<p class="ins">
+Verifier si remote is ok</br>
+</p>
+<p class="cmd">
+git remote
+</p>
+<p class="res">
+origin
+</p>
+<p class="cmd">
+git push origin master
+</p>
+<p class="res">
+The authenticity of host 'github.com (A.B.C.D)' can't be established.</br>
+RSA key fingerprint is SHA256:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.</br>
+Are you sure you want to continue connecting (yes/no)? yes</br>
+Warning: Permanently added 'github.com,A.B.C.D' (RSA) to the list of known hosts.</br>
+Permission denied (publickey).</br>
+fatal: Could not read from remote repository.</br>
+</br>
+Please make sure you have the correct access rights</br>
+and the repository exists.
+</p>
+<h4>Recuper le repository test en local en premier avant de faire un push</h4>
+<p class="cmd">
+git pull origin master
+</p>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+git diff master..myBranch
+
+=================================
+Sites interressants
+https://flatuicolors.com/
+</body>
+
+
+
