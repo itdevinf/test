@@ -1,0 +1,61 @@
+From https://markkit.dev/markdown-to-html
+
+# Titre de niveau 1
+## Titre de niveau 2
+### Titre de niveau 3
+
+**Texte en gras** ou __Texte en gras__
+
+*Texte en italique* ou _Texte en italique_
+
+~~Test barré ~~
+
+- Élément 1
+- Élément 2
+
+1. Élément 1
+2. Élément 2
+
+
+```python
+print("Bonjour, Markdown !")
+```
+
+### Liens et images
+
+Ceci est un lien vers [Google](https://www.google.com).
+
+Pour une image, ajoutez un point d'exclamation (!)
+![Markdown Logo](https://upload.wikimedia.org/wikipedia/commons/4/48/Markdown-mark.svg)
+
+> Ceci est une citation
+---
+
+Séparation ci-dessus
+
+Suivi d'un tableau
+| Header 1 | Header 2 | Header 3 |
+|:---------|:---------|:---------|
+| Cell 1   | Cell 2   | Cell 3   |
+| Cell 4   | Cell 5   | Cell 6   |
+
+
+```
+Code Block
+```
+
+- List Item 1
+- List Item 2
+- List Item 3
+
+1. First Item
+2. Second Item
+3. Third Item
+
+> Blockquote Text
+
+~~Strikethrough~~
+
+
+---
+
